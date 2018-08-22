@@ -5,7 +5,7 @@ public class DayliAdviceClient {
 
     public void go(){
         try {
-            Socket s = new Socket("127.0.0.1",4242);
+            Socket s = new Socket("192.168.127.251",4242);
 
             InputStreamReader streamReader = new InputStreamReader(s.getInputStream());
             BufferedReader reader = new BufferedReader(streamReader);
