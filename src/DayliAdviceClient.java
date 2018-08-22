@@ -7,7 +7,7 @@ public class DayliAdviceClient {
         try {
             Socket s = new Socket("192.168.127.251",4242);
 
-            InputStreamReader streamReader = new InputStreamReader(s.getInputStream());
+            InputStreamReader streamReader = new InputStreamReader(s.getInputStream(),"Windows-1251");
             BufferedReader reader = new BufferedReader(streamReader);
 
             String advice = reader.readLine();

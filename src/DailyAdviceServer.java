@@ -11,7 +11,6 @@ public class DailyAdviceServer {
         System.out.println("server runned");
         try {
             ServerSocket serverSock = new ServerSocket(4242);
-
             while (true){
                 Socket sock = serverSock.accept();
 
